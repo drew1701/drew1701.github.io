@@ -1,0 +1,122 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<!-- CNIT133M Homework 01A --> 
+<!-- Andrew Patrick - apatric1@mail.ccsf.edu -->
+
+<head>
+
+  <title>CNIT133M Homework 01A</title>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="Homework Assignment for CNIT133M, Fall 2020 Term" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="css/cnit133m_hw01.css" />
+  
+<!-- jQuery code for animation on button click, using id selectors -->
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#watchme").css({"color": "Blue"});
+    $("#addoutline").css({"borderStyle": "solid"});
+    $("#watchme").animate({fontSize: "4.5em"}, "slow");
+    $("#addoutline").animate({borderWidth: "thick"}, "slow");
+    $("#watchme").animate({fontSize: "2.5em"}, "slow");
+    
+  });
+});
+
+</script>
+
+  
+</head>
+
+<body>
+
+<div class="container-fluid my-2 p-2 bg-dark text-white ">
+
+  <h1 id="watchme">Simple HTML &amp; CSS Page</h1>
+  
+</div>
+
+<div class="container my-3 p-3 border">
+  <div class="row">	
+<!-- changed the columns here so the image column is smaller than text -->
+    <div class="col-sm-4">
+      <img id="addoutline" src="images/drew-kent-vyxsin.jpg" class="img-fluid rounded-circle shadow-lg" alt="photo of Drew with Kent & Vyxsin from The Amazing Race">
+    </div>
+  
+    <div class="col-sm-8 pt-4">
+      <p>Hello, My name is Andrew Patrick and I just started back as a student at CCSF. A few years ago I took classes in web programming and linux administration which I enjoyed. I'm back now doing this class on mobile web, and also taking the Internet of Things course. This stuff is fun for me, like figuring out a puzzle.
+      </p>
+    </div>
+  
+  </div>
+</div>	  
+
+<div class="container my-3 p-3 border">
+
+  <p>I'm taking this class because I'd like to keep my web skills current and that means mobile friendly. With the amazing Free City program, the tuition is covered so you have to be silly not to brush up or learn new things.
+  </p>
+
+</div>
+
+<div class="container my-3 p-3 border">
+
+  <h3>Technologies for this class</h3>
+  <div class="row">
+    <div class="col"></div>
+    <div class="col">
+      <ul class="list-group">
+        <li class="list-group-item">HTML</li>
+        <li class="list-group-item">CSS</li>
+        <li class="list-group-item">JavaScript</li>
+      </ul>    
+    </div>
+    <div class="col"></div>
+  </div>
+
+</div>
+
+<div class="container my-3 p-3 border">
+
+  <h3>Resources</h3>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a href="https://www.rapidtables.com/web/color/html-color-codes.html" target="_blank" rel="noopener noreferrer">RapidTables</a>
+      &nbsp;- Great over all reference site, I love their color tables for HTML
+    </li>
+    <li class="list-group-item">
+      <a href="https://validator.w3.org" target="_blank" rel="noopener noreferrer">W3C Markup Validation Service</a>
+      &nbsp;- This site will check your code to make sure it conforms to web standards
+    </li>
+    <li class="list-group-item">
+      <a href="https://www.codehelp.co.uk/html/deprecated.html" target="_blank" rel="noopener noreferrer">Deprecated HTML</a>
+      &nbsp;- This page might be a little old itself, but a good reminder of tags to avoid
+    </li>
+  </ul>
+
+</div>
+
+<div class="container my-3 p-3 border">
+  <button>Start Animation</button>
+</div>
+
+<div style="height:150px" class="container-fluid">
+</div>
+
+
+
+
+
+
+
+</body>
+
+
+</html> 
